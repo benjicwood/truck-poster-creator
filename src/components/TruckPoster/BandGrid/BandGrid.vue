@@ -13,7 +13,7 @@
     <PosterRow
       class="co-headliner"
       :row="rows.coHeadliner"
-      placeholder="CLICK TO ADD CO-HEADLINER(S)"
+      placeholder="CLICK TO ADD THURSDAY HEADLINER(S)"
       @click="openEditor('coHeadliner', 'Co-Headliner')"
       :alwaysHighlight="alwaysHighlight || isActiveRow('coHeadliner')"
       :showPlaceholderAlways="!posterStarted"
@@ -461,6 +461,7 @@ defineExpose({
 @use "../../../assets/scss/styles.scss";
 
 .poster-content {
+  container-type: inline-size;
   position: absolute;
   top: 0;
   left: 50%;
